@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELEPHANT IN THE ROOM — Furniture & Art</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #f7f4ef;
+    --accent: #8a6f4e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  header.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--ink);
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    margin-top: 24px;
+    max-width: 45ch;
+  }
+
+  section { padding: 80px 0; border-bottom: 1px solid var(--ink); }
+  h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color: var(--accent);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+  }
+  .piece img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    background: #ddd;
+    display: block;
+  }
+  .piece h3 { font-size: 1.1rem; font-weight: normal; margin-top: 16px; }
+  .piece p { font-size: 0.9rem; color: #555; }
+  .piece .price { color: var(--accent); margin-top: 8px; }
+
+  .concept-text { font-size: clamp(1.2rem, 3vw, 1.8rem); max-width: 35ch; }
+
+  footer { padding: 60px 0; font-size: 0.95rem; }
+  footer a { color: var(--ink); }
+
+  @media (max-width: 600px) {
+    section { padding: 48px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <h1>ELEPHANT<br>IN THE<br>ROOM</h1>
+    <p>Furniture and art for spaces that refuse to be ignored. Amman.</p>
+  </header>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Concept</h2>
+    <p class="concept-text">We collect the obvious, the heavy, and the unspoken. Objects with presence that anchor a room instead of fading into it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Collection</h2>
+    <div class="grid">
+
+      <div class="piece">
+        <img src="images/piece-01.jpg" alt="Solid wood piece">
+        <h3>Olive Wood Stool</h3>
+        <p>Hand-carved, single slab, natural oil finish.</p>
+        <p class="price">Enquire</p>
+      </div>
+
+      <div class="piece">
+        <img src="images/piece-02.jpg" alt="Ceramic vessel">
+        <h3>Ceramic Vessel</h3>
+        <p>Wheel-thrown stoneware, ash glaze.</p>
+        <p class="price">Enquire</p>
+      </div>
+
+      <div class="piece">
+        <img src="images/piece-03.jpg" alt="Linen chair">
+        <h3>Linen Sling Chair</h3>
+        <p>Solid oak frame, undyed linen.</p>
+        <p class="price">Enquire</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>About</h2>
+    <p style="max-width: 55ch;">ELEPHANT IN THE ROOM is a concept store founded in 2026 in Amman. We work with makers across the region to showcase pieces that demand attention—art and furniture that change the gravity of a space.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>ELEPHANT IN THE ROOM — Amman, Jordan</p>
+    <p><a href="mailto:hello@elephantintheroom.com">hello@elephantintheroom.com</a> · <a href="https://instagram.com/">Instagram</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
